@@ -33,7 +33,7 @@ export default function Footer() {
                 type="email"
                 name="newsletter"
                 id="newsletter"
-                placeHolder="Enter your email address"
+                placeholder="Enter your email address"
                 required
                 className="block w-full px-5 py-2 mt-2 border-2 outline-none rounded-tl-md rounded-bl-md bg-none border-primary"
               />

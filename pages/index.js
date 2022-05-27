@@ -6,8 +6,8 @@ import { FaGlobe } from "react-icons/fa";
 import { IoIosPaper } from "react-icons/io";
 import { IoPulseOutline } from "react-icons/io5";
 import { GiDiscussion } from "react-icons/gi";
-import TestimonialCard from "../components/Home/TestimonialCard";
-import LatestBlogCard from "../components/Home/LatestBlogCard";
+import TestimonialCard from "@/Home/TestimonialCard";
+import LatestBlogCard from "@/Home/LatestBlogCard";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
