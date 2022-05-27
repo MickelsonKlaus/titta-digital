@@ -19,6 +19,7 @@ export default function NavBar() {
               src="/assets/images/logo.png"
               alt="titta digital"
               layout="fill"
+              priority
             />
           </a>
         </Link>
