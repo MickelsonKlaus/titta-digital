@@ -30,7 +30,7 @@ export default function Home() {
       <section className="relative h-screen">
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
-            src="/assets/images/path 1.png"
+            src="/assets/images/path.png"
             alt="path"
             layout="fill"
             priority
