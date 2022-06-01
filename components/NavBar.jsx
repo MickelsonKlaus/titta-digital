@@ -11,10 +11,19 @@ export default function NavBar() {
     setIsNavBarActive(!isNavBarActive);
   };
 
+  const handleClickLink = () => {
+    setIsNavBarActive(false);
+  };
+
   return (
     <nav className="sticky top-0 z-50 w-full px-5 py-3 bg-white shadow-sm h-fit sm:flex sm:justify-between md:px-10 sm:items-center">
       <div className="flex items-center justify-between flex-1">
-        <NavLink href="/" exact className="relative inline-block w-20 h-10">
+        <NavLink
+          onClick={handleClickLink}
+          href="/"
+          exact
+          className="relative inline-block w-20 h-10"
+        >
           <Image
             src="/assets/images/logo.png"
             alt="titta digital"
@@ -41,7 +50,7 @@ export default function NavBar() {
         <li className="sm:inline">
           <NavLink
             href="/services"
-            onClick={handleClick}
+            onClick={handleClickLink}
             className="text-sm font-medium transition-all duration-300 hover:text-primary"
           >
             Services
@@ -49,7 +58,7 @@ export default function NavBar() {
         </li>
         <li className="sm:inline-block">
           <NavLink
-            onClick={handleClick}
+            onClick={handleClickLink}
             href="/about"
             className="text-sm font-medium transition-all duration-300 hover:text-primary"
           >
@@ -59,7 +68,7 @@ export default function NavBar() {
         <li>
           <NavLink
             href="/portfolio"
-            onClick={handleClick}
+            onClick={handleClickLink}
             className="text-sm font-medium transition-all duration-300 hover:text-primary"
           >
             Portfolio
@@ -68,14 +77,14 @@ export default function NavBar() {
         <li className="sm:inline-block">
           <NavLink
             href="/blog"
-            onClick={handleClick}
+            onClick={handleClickLink}
             className="text-sm font-medium transition-all duration-300 hover:text-primary"
           >
             Blog
           </NavLink>
         </li>
         <li className="sm:inline-block">
-          <Link href="/hire us" passHref={true}>
+          <Link href="/hire-us" passHref={true}>
             <a className="inline-block px-3 py-2 text-sm font-medium text-white transition-all duration-300 rounded-md hover:bg-accent/80 bg-accent">
               Hire us
             </a>
