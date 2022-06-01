@@ -5,9 +5,10 @@ import { MdPlayArrow } from "react-icons/md";
 import { FaGlobe } from "react-icons/fa";
 import { IoIosPaper } from "react-icons/io";
 import { IoPulseOutline } from "react-icons/io5";
-import { GiDiscussion } from "react-icons/gi";
+
 import TestimonialCard from "@/Home/TestimonialCard";
 import LatestBlogCard from "@/Home/LatestBlogCard";
+import { toBase64, shimmer } from "shimmer";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -34,6 +35,10 @@ export default function Home() {
             alt="path"
             layout="fill"
             priority
+            placeholder="blur"
+            blurDataURL={`data:image/svg+xml;base64,${toBase64(
+              shimmer(700, 475)
+            )}`}
           />
         </div>
         <div className="relative z-10 w-full max-w-3xl px-5 pt-10 mx-auto text-white">
@@ -104,6 +109,10 @@ export default function Home() {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
+              placeholder="blur"
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(300, 400)
+              )}`}
             />
           </div>
         </div>
@@ -114,6 +123,10 @@ export default function Home() {
             layout="fill"
             objectFit="cover"
             objectPosition="center"
+            placeholder="blur"
+            blurDataURL={`data:image/svg+xml;base64,${toBase64(
+              shimmer(300, 400)
+            )}`}
           />
         </div>
       </section>
@@ -172,6 +185,10 @@ export default function Home() {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
+              placeholder="blur"
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(300, 400)
+              )}`}
             />
           </div>
         </div>
@@ -201,25 +218,6 @@ export default function Home() {
               ))}
           </div>
         </div>
-      </section>
-      <section className="relative w-[95%] p-5 m-auto rounded-md md:px-10 min-h-72 bg-primary flex justify-center space-y-5 md:space-y-0 md:space-x-10 items-start flex-wrap">
-        <div className="max-w-lg">
-          <h1 className="mb-3 text-2xl font-medium text-white md:text-3xl lg:text-4xl">
-            Got A Project Or A Partnership In Mind?
-          </h1>
-          <p className="mb-10 text-sm text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, iure
-            adipisci fugit voluptates molestiae quos. Voluptate deserunt
-            reiciendis dignissimos, eum nostrum laboriosam eligendi odit sint
-            at. Dignissimos eius minima quam.
-          </p>
-          <Link href="/discuss" passHref>
-            <a className="px-5 py-2 text-sm bg-white rounded-md text-primary">
-              Let&apos;s discuss
-            </a>
-          </Link>
-        </div>
-        <GiDiscussion className="w-56 h-56 text-white" />
       </section>
     </div>
   );

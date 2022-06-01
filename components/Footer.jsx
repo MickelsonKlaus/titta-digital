@@ -14,6 +14,7 @@ export default function Footer() {
                 src="/assets/images/logo.png"
                 alt="titta digital"
                 layout="fill"
+                priority
               />
             </a>
           </Link>

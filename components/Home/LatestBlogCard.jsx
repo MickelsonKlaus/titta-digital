@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { toBase64, shimmer } from "shimmer";
 
 export default function LatestBlogCard() {
   return (
@@ -11,6 +12,10 @@ export default function LatestBlogCard() {
           layout="fill"
           objectFit="cover"
           objectPosition="center"
+          placeholder="blur"
+          blurDataURL={`data:image/svg+xml;base64,${toBase64(
+            shimmer(300, 400)
+          )}`}
         />
       </span>
       <span className="inline-block p-2">

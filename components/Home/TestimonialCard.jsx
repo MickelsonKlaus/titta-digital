@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { toBase64, shimmer } from "shimmer";
 
 export default function TestimonialCard() {
   return (
@@ -18,6 +19,10 @@ export default function TestimonialCard() {
             layout="fill"
             objectFit="cover"
             objectPosition="center"
+            placeholder="blur"
+            blurDataURL={`data:image/svg+xml;base64,${toBase64(
+              shimmer(300, 400)
+            )}`}
           />
         </span>
         <span>

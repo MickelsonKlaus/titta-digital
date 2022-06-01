@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { MdMenu, MdOutlineClose } from "react-icons/md";
+import NavLink from "@/NavLink";
 
 export default function NavBar() {
   let [isNavBarActive, setIsNavBarActive] = useState(false);
@@ -13,16 +14,14 @@ export default function NavBar() {
   return (
     <nav className="sticky top-0 z-50 w-full px-5 py-3 bg-white shadow-sm h-fit sm:flex sm:justify-between md:px-10 sm:items-center">
       <div className="flex items-center justify-between flex-1">
-        <Link href="/" passHref={true}>
-          <a className="relative inline-block w-20 h-10">
-            <Image
-              src="/assets/images/logo.png"
-              alt="titta digital"
-              layout="fill"
-              priority
-            />
-          </a>
-        </Link>
+        <NavLink href="/" exact className="relative inline-block w-20 h-10">
+          <Image
+            src="/assets/images/logo.png"
+            alt="titta digital"
+            layout="fill"
+            priority
+          />
+        </NavLink>
         <button
           onClick={handleClick}
           className="transition-all duration-300 sm:hidden"
@@ -40,32 +39,40 @@ export default function NavBar() {
         }`}
       >
         <li className="sm:inline">
-          <Link href="/services" passHref={true}>
-            <a className="text-sm font-medium transition-all duration-300 hover:text-primary">
-              Services
-            </a>
-          </Link>
+          <NavLink
+            href="/services"
+            onClick={handleClick}
+            className="text-sm font-medium transition-all duration-300 hover:text-primary"
+          >
+            Services
+          </NavLink>
         </li>
         <li className="sm:inline-block">
-          <Link href="/about" passHref={true}>
-            <a className="text-sm font-medium transition-all duration-300 hover:text-primary">
-              About
-            </a>
-          </Link>
+          <NavLink
+            onClick={handleClick}
+            href="/about"
+            className="text-sm font-medium transition-all duration-300 hover:text-primary"
+          >
+            About
+          </NavLink>
         </li>
         <li>
-          <Link href="/portfolio" passHref={true}>
-            <a className="text-sm font-medium transition-all duration-300 hover:text-primary">
-              Portfolio
-            </a>
-          </Link>
+          <NavLink
+            href="/portfolio"
+            onClick={handleClick}
+            className="text-sm font-medium transition-all duration-300 hover:text-primary"
+          >
+            Portfolio
+          </NavLink>
         </li>
         <li className="sm:inline-block">
-          <Link href="/blog" passHref={true}>
-            <a className="text-sm font-medium transition-all duration-300 hover:text-primary">
-              Blog
-            </a>
-          </Link>
+          <NavLink
+            href="/blog"
+            onClick={handleClick}
+            className="text-sm font-medium transition-all duration-300 hover:text-primary"
+          >
+            Blog
+          </NavLink>
         </li>
         <li className="sm:inline-block">
           <Link href="/hire us" passHref={true}>
