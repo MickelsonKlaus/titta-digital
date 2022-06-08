@@ -60,9 +60,7 @@ export default function Home() {
               <div className="absolute top-0 left-0 z-10 w-full h-full bg-black/20"></div>
             )}
             <video
-              src="/assets/video/pexels-kindel-media-6774633.mp4" // width="320"
-              // height="240"
-              // controls
+              src="/assets/video/intro.mp4"
               id="video"
               className="w-full h-full cursor-pointer"
               onPause={handlePause}
@@ -70,7 +68,7 @@ export default function Home() {
             {!isPlaying && (
               <button
                 onClick={handleClick}
-                className="absolute z-20 p-2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full top-1/2 left-1/2"
+                className="absolute z-20 p-2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full select-none top-1/2 left-1/2"
               >
                 <MdPlayArrow className="w-10 h-10 text-accent" />
               </button>
@@ -78,7 +76,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative px-5 pb-5 md:px-10 md:flex md:justify-between md:items-start md:space-x-10 min-h-fit mb-20">
+      <section className="relative px-5 pb-5 mb-20 md:px-10 md:flex md:justify-between md:items-start md:space-x-10 min-h-fit">
         <div className="max-w-2xl">
           <h1 className="mb-3 text-xl md:text-2xl">
             Why Are We The Best From Other
@@ -130,7 +128,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="relative px-5 pb-5 md:px-10 min-h-fit mb-20">
+      <section className="relative px-5 pb-5 mb-20 md:px-10 min-h-fit">
         <h1 className="max-w-xs mx-auto mb-8 text-xl text-center md:mb-20 md:text-2xl">
           Discover Some Of Our Amazing Services
         </h1>
@@ -193,7 +191,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative w-full px-5 pb-5 md:px-10 min-h-fit mb-20">
+      <section className="relative w-full px-5 pb-5 mb-20 md:px-10 min-h-fit">
         <h1 className="mb-5 text-xl md:text-2xl">
           What Our Clients Are Saying
         </h1>
@@ -207,7 +205,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative w-full px-5 pb-5 md:px-10 min-h-fit mb-20">
+      <section className="relative w-full px-5 pb-5 mb-20 md:px-10 min-h-fit">
         <h1 className="mb-5 text-xl md:text-2xl">Latest Updates</h1>
         <div className="w-full max-w-full overflow-auto hide-overflow">
           <div className="flex items-start justify-start py-2 space-x-5 w-fit flex-nowrap h-fit">
