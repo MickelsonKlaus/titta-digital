@@ -14,7 +14,7 @@ export default function Disucss() {
           reiciendis dignissimos, eum nostrum laboriosam eligendi odit sint at.
           Dignissimos eius minima quam.
         </p>
-        <Link href="/discuss" passHref>
+        <Link href="/hire-us" passHref>
           <a className="px-5 py-2 text-sm bg-white rounded-md text-primary">
             Let&apos;s discuss
           </a>

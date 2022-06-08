@@ -2,24 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { toBase64, shimmer } from "shimmer";
 
-export default function LatestBlogCard() {
+export default function Card() {
   return (
-    <div className="overflow-hidden rounded-md shadow-md w-80">
+    <div className="w-full overflow-hidden rounded-md shadow-md">
       <span className="relative inline-block w-full h-48">
-        <Image
-          src="/assets/images/nextjs or reactjs website or app.png"
-          alt="clients"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          placeholder="blur"
-          blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimmer(300, 400)
-          )}`}
-        />
+        <video
+          src="/assets/video/Protaroom.mp4"
+          poster="/assets/images/placeholder.png"
+          className="w-full h-full"
+          controls
+        ></video>
       </span>
       <span className="inline-block p-3">
-        <h3 className="mb-3 font-medium text-md">Performance vs Beauty</h3>
+        <h3 className="mb-3 font-medium text-md">Protaroom</h3>
         <p className="mb-5 text-xs md:text-sm">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
           maiores itaque ipsam, libero amet consequuntur fuga dolorem doloribus
@@ -27,7 +22,7 @@ export default function LatestBlogCard() {
         </p>
         <Link href="/" passHref>
           <a className="inline-block text-sm transition-all duration-200 text-primary hover:underline md:text-md">
-            Read
+            Preview
           </a>
         </Link>
       </span>

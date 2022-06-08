@@ -6,7 +6,7 @@ import { FaGlobe } from "react-icons/fa";
 import { IoIosPaper } from "react-icons/io";
 import { IoPulseOutline } from "react-icons/io5";
 
-import TestimonialCard from "@/Home/TestimonialCard";
+import TestimonialCard from "@/TestimonialCard";
 import LatestBlogCard from "@/Home/LatestBlogCard";
 import { toBase64, shimmer } from "shimmer";
 
@@ -27,9 +27,9 @@ export default function Home() {
     videoElement.controls = false;
   };
   return (
-    <div className="relative max-w-full space-y-16 md:space-y-20 text-accent">
-      <section className="relative h-screen">
-        <div className="absolute top-0 left-0 w-full h-full">
+    <div className="relative max-w-full text-accent">
+      <section className="relative h-[80vh] lg:h-screen md:mb-20">
+        <div className="absolute top-0 left-0 w-full lg:h-full h-[80vh]">
           <Image
             src="/assets/images/path.png"
             alt="path"
@@ -78,9 +78,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative px-5 pb-5 md:px-10 md:flex md:justify-between md:items-start md:space-x-10 min-h-fit">
+      <section className="relative px-5 pb-5 md:px-10 md:flex md:justify-between md:items-start md:space-x-10 min-h-fit mb-20">
         <div className="max-w-2xl">
-          <h1 className="mb-3 text-xl font-medium md:text-2xl">
+          <h1 className="mb-3 text-xl md:text-2xl">
             Why Are We The Best From Other
           </h1>
           <p className="mb-3 text-sm md:text-md">
@@ -130,8 +130,8 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="relative px-5 pb-5 md:px-10 min-h-fit">
-        <h1 className="max-w-xs mx-auto mb-8 text-xl font-medium text-center md:mb-10 md:text-2xl">
+      <section className="relative px-5 pb-5 md:px-10 min-h-fit mb-20">
+        <h1 className="max-w-xs mx-auto mb-8 text-xl text-center md:mb-20 md:text-2xl">
           Discover Some Of Our Amazing Services
         </h1>
         <div className=" md:flex md:justify-between md:items-start md:space-x-10">
@@ -193,8 +193,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative w-full px-5 pb-5 md:px-10 min-h-fit">
-        <h1 className="mb-5 text-xl font-medium md:text-2xl">
+      <section className="relative w-full px-5 pb-5 md:px-10 min-h-fit mb-20">
+        <h1 className="mb-5 text-xl md:text-2xl">
           What Our Clients Are Saying
         </h1>
         <div className="w-full max-w-full overflow-auto hide-overflow">
@@ -207,8 +207,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative w-full px-5 pb-5 md:px-10 min-h-fit">
-        <h1 className="mb-5 text-xl font-medium md:text-2xl">Latest Updates</h1>
+      <section className="relative w-full px-5 pb-5 md:px-10 min-h-fit mb-20">
+        <h1 className="mb-5 text-xl md:text-2xl">Latest Updates</h1>
         <div className="w-full max-w-full overflow-auto hide-overflow">
           <div className="flex items-start justify-start py-2 space-x-5 w-fit flex-nowrap h-fit">
             {Array(5)

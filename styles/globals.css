@@ -4,6 +4,10 @@
 
 .hide-overflow::-webkit-scrollbar {
   appearance: none;
-  height: 0;
-  width: 0;
+  height: 2px;
+}
+
+.hide-overflow::-webkit-scrollbar-thumb {
+  background: #3f4756;
+  border-radius: 20px;
 }

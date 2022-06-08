@@ -122,22 +122,22 @@ export default function Footer() {
           <span className="flex items-center justify-start space-x-5">
             <Link href="https://facebook.com/" passHref target="_blank">
               <a>
-                <BsFacebook className="w-6 h-6 text-accent" />
+                <BsFacebook className="w-5 h-5 text-accent" />
               </a>
             </Link>
             <Link href="https://twitter.com/" passHref target="_blank">
               <a>
-                <BsTwitter className="w-6 h-6 text-accent" />
+                <BsTwitter className="w-5 h-5 text-accent" />
               </a>
             </Link>
             <Link href="https://instagram.com/" passHref target="_blank">
               <a>
-                <BsInstagram className="w-6 h-6 text-accent" />
+                <BsInstagram className="w-5 h-5 text-accent" />
               </a>
             </Link>
             <Link href="mailto:support@titta.com" passHref target="_blank">
               <a>
-                <MdEmail className="w-6 h-6 text-accent" />
+                <MdEmail className="w-5 h-5 text-accent" />
               </a>
             </Link>
           </span>

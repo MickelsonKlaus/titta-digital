@@ -16,7 +16,7 @@ export default function Card() {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque,
         suscipit.
       </p>
-      <Link href="/" passHref>
+      <Link href="/services/web" passHref>
         <a className="flex items-end justify-center px-3 py-2 space-x-1 text-sm transition-transform duration-200 bg-white rounded-md text-primary w-fit hover:scale-110">
           <span>Learn more</span> <AiOutlineArrowRight className="w-4 h-4" />
         </a>
