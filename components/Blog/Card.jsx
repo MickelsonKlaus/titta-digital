@@ -26,7 +26,7 @@ export default function Card() {
             perferendis amet eligendi beatae placeat ea possimus aut repellat,
             vel neque...
           </p>
-          <Link href="/" passHref>
+          <Link href="/blog/slug" passHref>
             <a className="inline text-xs transition-all duration-200 text-primary hover:underline md:text-md">
               Read
             </a>

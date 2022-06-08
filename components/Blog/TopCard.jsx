@@ -29,7 +29,7 @@ const TopCard = () => {
           architecto amet!
         </p>
         <p className="mb-3 text-xs opacity-70">Created today</p>
-        <Link href="/" passHref>
+        <Link href="/blog/slug" passHref>
           <a className="inline-block mb-5 text-sm transition-all duration-200 text-primary hover:underline md:text-md">
             Read
           </a>
