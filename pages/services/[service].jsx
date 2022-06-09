@@ -13,7 +13,7 @@ function Service() {
         <h1 className="mb-2 text-xl font-medium md:text-2xl">
           Website Design and Development service
         </h1>
-        <div className="relative w-full mt-5 overflow-hidden rounded-md h-50 md:h-80">
+        <div className="relative w-full mt-5 overflow-hidden rounded-md h-52 md:h-80">
           <Image
             src="/assets/images/blake-wisz-tE6th1h6Bfk-unsplash.jpg"
             alt="working"

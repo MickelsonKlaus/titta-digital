@@ -40,7 +40,7 @@ const Slug = () => {
             <p className="text-xs opacity-70">Managing Director</p>
           </span>
         </span>
-        <div className="relative w-full mt-5 overflow-hidden rounded-md h-50 md:h-80">
+        <div className="relative w-full mt-5 overflow-hidden rounded-md h-52 md:h-80">
           <Image
             src="/assets/images/blake-wisz-tE6th1h6Bfk-unsplash.jpg"
             alt="working"
